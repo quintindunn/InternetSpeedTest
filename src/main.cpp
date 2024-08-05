@@ -4,6 +4,9 @@
 #include "speedtester.h"
 
 int main() {
-	speedtest();
+	float *results = speedtest();
+
+	printf("Download Speed: %fMbps, Upload Speed: N/A", results[0], results[1]);
+
 	return 0;
 }

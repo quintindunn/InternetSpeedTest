@@ -10,7 +10,7 @@
 
 // CREDIT: https://github.com/sivel/speedtest-cli/blob/8c7f9fe74003a0ee09d88a890b9ffa0687d6e4ec/speedtest-cli
 
-void speedtest() {
+float *speedtest() {
 	//Config config = Config();  // Unused for now.
 
 	Server bestServer = getBestServer();
@@ -24,8 +24,11 @@ void speedtest() {
 			urls.push_back(std::format("{}/random{}x{}.jpg", bestServer.get_path(), size, size));
 		}
 	}
-
-	downloadSpeed(urls);
+	float download_speed = downloadSpeed(urls);
+	float *results = new float[2];
+	results[0] = download_speed;
+	results[1] = -1.0f;
+	return results;
 }
 
 float downloadSpeed(std::vector<std::string> files) {
@@ -60,6 +63,5 @@ float downloadSpeed(std::vector<std::string> files) {
 
 	time_point<high_resolution_clock> endtime = high_resolution_clock::now();
 	float time = duration_cast<seconds>(endtime - starttime).count();
-	std::cout << ((results / time) / 1024 / 1024)*8 << std::endl;
-	return results / time;
+	return ((results / time) / 1024 / 1024) * 8;
 }
