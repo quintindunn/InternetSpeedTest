@@ -15,45 +15,45 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="requester.cpp">
+    <ClCompile Include="src\requester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="config.cpp">
+    <ClCompile Include="src\config.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="string_utils.cpp">
+    <ClCompile Include="src\string_utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="server.cpp">
+    <ClCompile Include="src\server.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="speedtester.cpp">
+    <ClCompile Include="src\speedtester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="filegetter.cpp">
+    <ClCompile Include="src\filegetter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="requester.h">
+    <ClInclude Include="src\requester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="config.h">
+    <ClInclude Include="src\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="string_utils.h">
+    <ClInclude Include="src\string_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="server.h">
+    <ClInclude Include="src\server.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="speedtester.h">
+    <ClInclude Include="src\speedtester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="filegetter.h">
+    <ClInclude Include="src\filegetter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -131,21 +131,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="config.cpp" />
-    <ClCompile Include="filegetter.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="requester.cpp" />
-    <ClCompile Include="server.cpp" />
-    <ClCompile Include="speedtester.cpp" />
-    <ClCompile Include="string_utils.cpp" />
+    <ClCompile Include="src\config.cpp" />
+    <ClCompile Include="src\filegetter.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\requester.cpp" />
+    <ClCompile Include="src\server.cpp" />
+    <ClCompile Include="src\speedtester.cpp" />
+    <ClCompile Include="src\string_utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="config.h" />
-    <ClInclude Include="filegetter.h" />
-    <ClInclude Include="requester.h" />
-    <ClInclude Include="server.h" />
-    <ClInclude Include="speedtester.h" />
-    <ClInclude Include="string_utils.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\filegetter.h" />
+    <ClInclude Include="src\requester.h" />
+    <ClInclude Include="src\server.h" />
+    <ClInclude Include="src\speedtester.h" />
+    <ClInclude Include="src\string_utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
