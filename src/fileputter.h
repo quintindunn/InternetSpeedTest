@@ -1,32 +1,32 @@
 #pragma once
 #include <string>
+#include <vector>
 #include <chrono>
 #include <future>
 
-#define GETTER_TIMEOUT 10
+#define PUTTER_TIMEOUT 30
 
 using namespace std::chrono;
 
-class FileGetter {
+class FilePutter {
 private:
-	std::string url;
-	std::string result;
-	time_point<high_resolution_clock> starttime;
+    std::string url;
+    time_point<high_resolution_clock> starttime;
+    long size;
 
     std::promise<void> donePromise;
     std::future<void> doneFuture;
 
 public:
-    FileGetter(const std::string& url, const time_point<high_resolution_clock>& start);
-
+    FilePutter(const std::string& url, const time_point<high_resolution_clock>& start, size_t size);
 
     void run();
 
     void setUrl(std::string& newUrl) { url = newUrl; }
     std::string getUrl() { return url; }
 
-    void setResult(std::string& newResult) { result = newResult; }
-    std::string getResult() { return result; }
+    void setSize(size_t newSize) { size = newSize; }
+    size_t getSize() { return size; }
 
     time_point<high_resolution_clock> getStartTime() { return starttime; };
 
@@ -35,4 +35,4 @@ public:
 
 };
 
-float downloadSpeed(std::vector<std::string> files);
+float uploadSpeed(std::string url, std::vector<int> sizes);

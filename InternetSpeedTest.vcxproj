@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\fileputter.cpp" />
     <ClCompile Include="src\config.cpp" />
     <ClCompile Include="src\filegetter.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -140,6 +141,7 @@
     <ClCompile Include="src\string_utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\fileputter.h" />
     <ClInclude Include="src\config.h" />
     <ClInclude Include="src\filegetter.h" />
     <ClInclude Include="src\requester.h" />

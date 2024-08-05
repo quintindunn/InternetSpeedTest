@@ -39,13 +39,9 @@ public:
 
 	void ping();
 
-	float get_latency() {
-		return this->latency;
-	}
-
-	string get_path() {
-		return this->path;
-	}
+	float get_latency() { return this->latency; }
+	string get_path() { return this->path; }
+	string get_url() { return this->url; }
 };
 
 std::vector<Server*> getServerList();

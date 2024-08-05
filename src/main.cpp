@@ -6,7 +6,7 @@
 int main() {
 	float *results = speedtest();
 
-	printf("Download Speed: %fMbps, Upload Speed: N/A", results[0], results[1]);
+	printf("Download Speed: %fMbps, Upload Speed:%f", results[0], results[1]);
 
 	return 0;
 }

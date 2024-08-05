@@ -19,8 +19,8 @@ void execute(FileGetter* ctx, std::promise<void>* promise) {
     using namespace std::chrono;
 
     try {
-        if (duration_cast<seconds>(high_resolution_clock::now() - ctx->getStartTime()).count() > 10) {
-            std::string result = "error?";
+        if (duration_cast<seconds>(high_resolution_clock::now() - ctx->getStartTime()).count() > GETTER_TIMEOUT) {
+            std::string result = "";
             ctx->setResult(result);
         }
         else {
